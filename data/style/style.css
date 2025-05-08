@@ -11,6 +11,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -31,16 +32,227 @@ body {
   .container {
     max-width: 1024px;
   }
+  .header {
+    padding: 0 50px !important;
+  }
+
+  .color-box {
+    width: 170px !important;
+    height: 300px !important;
+  }
+
+  .color__packing {
+    width: 20% !important;
+    font-size: 10px !important;
+  }
+  .pack__content:hover .color__packing {
+    height: 280px !important;
+  }
+  .pack__content:hover .pack__content-color {
+    margin-top: -280px !important;
+  }
+
+  .labelH {
+    font-size: 23px !important;
+  }
+
+  .main__upload {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .pack__content {
+    border: 10px solid #f9fafb !important;
+    width: 400px !important;
+    height: 300px !important;
+  }
+
+  .main__feedback-container {
+    width: 90% !important;
+  }
+
   .footer {
     padding-left: 50px !important;
     padding-right: 50px !important;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
+  .container {
+    max-width: 1024px;
+  }
+  .header {
+    padding: 0 50px !important;
+  }
+
+  .color-box {
+    width: 130px !important;
+    height: 230px !important;
+  }
+
+  .pack__content-color {
+    margin-top: -50px !important;
+  }
+
+  .color__packing {
+    height: 50px !important;
+    width: 20% !important;
+    font-size: 7px !important;
+  }
+  .pack__content:hover .color__packing {
+    height: 185px !important;
+  }
+  .pack__content:hover .pack__content-color {
+    margin-top: -185px !important;
+  }
+
+  .labelH {
+    font-size: 17px !important;
+  }
+
+  .main__upload {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .pack__content {
+    border: 7px solid #f9fafb !important;
+    width: 300px !important;
+    height: 200px !important;
+  }
+
+  .main__feedback-container {
+    width: 90% !important;
+  }
+
+  .footer {
+    height: 300px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .footer__content {
+    align-items: baseline !important;
+  }
+
+  .footer__content-item {
+    width: 60% !important;
+  }
+
+  .footer__content-author {
+    width: 30% !important;
+  }
+
+  ooter__content-item.f,
+  footer__content-author {
+    height: 100% !important;
+    font-size: 10px !important;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header {
+    margin-top: 50px;
+    padding: 0px 5px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: grid !important;
+  }
+
+  .header__logo {
+    font-size: 65px !important;
+    text-align: center !important;
+  }
+
+  .header__button {
+    justify-content: center;
+    display: flex;
+  }
+
+  .main__upload-input {
+    width: calc(100vw - 50px) !important;
+    height: 350px !important;
+  }
+
+  .color-box {
+    width: 130px !important;
+    height: 230px !important;
+  }
+
+  .pack__content-color {
+    margin-top: -50px !important;
+  }
+
+  .color__packing {
+    height: 50px !important;
+    width: 20% !important;
+    font-size: 7px !important;
+  }
+  .pack__content:hover .color__packing {
+    height: 185px !important;
+  }
+  .pack__content:hover .pack__content-color {
+    margin-top: -185px !important;
+  }
+
+  .labelH {
+    font-size: 17px !important;
+  }
+
+  .main__upload {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .pack__content {
+    border: 7px solid #f9fafb !important;
+    width: 300px !important;
+    height: 200px !important;
+  }
+
+  .main__feedback-container {
+    width: 90% !important;
+  }
+
+  .form_Message {
+    width: max-content !;
+    height: 150px;
+  }
+
+  .main__feedback-form button {
+    width: 100% !important;
+  }
+
+  .footer {
+    height: max-content !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  .footer__content {
+    align-items: baseline !important;
+    display: grid;
+    gap: 20px;
+  }
+
+  .footer__content-item {
+    width: 100% !important;
+  }
+
+  .footer__content-author {
+    width: 100% !important;
+    padding: 20px 0;
+  }
+
+  ooter__content-item.f,
+  footer__content-author {
+    height: 100% !important;
+    font-size: 10px !important;
+  }
 }
 
 /* Header */
