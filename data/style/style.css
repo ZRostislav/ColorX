@@ -1,0 +1,421 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Плавная замена текста */
+.changed {
+  transition: all 0.01s ease;
+  width: 750% !important;
+  font-size: 14px !important;
+}
+
+/* Header */
+
+.header {
+  background-color: #f9fafb;
+  width: 100%;
+  height: 192px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 192px;
+}
+
+.header__logo {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.header__button button {
+  color: white;
+  width: 196px;
+  height: 44px;
+  background: #8b5cf6;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header__button button:hover {
+  background-color: #111827;
+}
+
+/* Main */
+
+.main {
+  background-color: #e5e7eb;
+  width: 100%;
+  height: max-content;
+}
+
+.main__pack {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.main__back {
+  flex-grow: 0;
+  position: absolute;
+  left: 0;
+}
+
+.main__back button {
+  all: unset;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-top: 500px solid transparent;
+  border-bottom: 500px solid transparent;
+  border-left: 50px solid #00000026;
+  cursor: pointer;
+}
+
+.main__upload {
+  padding-top: 200px;
+  padding-left: 192px;
+  padding-right: 192px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  flex-grow: 1;
+}
+
+.main__upload-img {
+  display: flex;
+  justify-content: center;
+}
+
+.main__upload-img img {
+  height: 500px;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 10px dashed #8b5cf6;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  object-fit: contain;
+}
+
+.main__upload-input {
+  height: 500px;
+  width: 700px;
+  background: #f9fafb;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 10px dashed #8b5cf6;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.main__upload-input.dragover {
+  background-color: #8b5cf6;
+  border-color: #f9fafb;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.main__upload-input label {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#colors {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  width: 290px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  font-size: 10px;
+  padding: 10px;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.labelH {
+  padding: 1.8%;
+  border-radius: 9px;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  display: flex;
+  transition: 0.15s;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.labelH:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main__upload-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.main__upload-btn button {
+  color: white;
+  width: 196px;
+  height: 44px;
+  background: #8b5cf6;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__upload-btn button:hover {
+  background-color: #111827;
+}
+
+.main__readyColor {
+  padding: 200px 0;
+  display: grid;
+}
+
+.main__readyColor-heading {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.main__readyColor-pack {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 100px;
+}
+
+.pack__content {
+  background-color: #f9fafb;
+  border: 15px solid #f9fafb;
+  border-radius: 70px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.pack__content-img {
+  width: 100%;
+  height: 100%;
+}
+
+.pack__content-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+}
+
+.pack__content-color {
+  display: flex;
+  position: relative;
+  margin-top: -75px;
+  transition: margin-top 0.5s ease;
+}
+
+.pack__content:hover .pack__content-color {
+  margin-top: -475px;
+}
+
+.color__packing {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.5s ease;
+  font-size: 15px;
+}
+
+.pack__content:hover .color__packing {
+  height: 475px;
+}
+
+.color__packing-text {
+  opacity: 0;
+  transition: 0.1s ease;
+}
+
+.pack__content:hover .color__packing-text {
+  opacity: 1;
+}
+
+.color__packing-btn {
+  display: none;
+}
+
+.main__feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 70px;
+}
+
+.main__feedback-container {
+  display: block;
+  justify-content: center;
+  width: 50%;
+  height: 500px;
+  border-radius: 16px;
+  background-color: #f9fafb;
+  padding-top: 40px;
+}
+
+.main__feedback-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.main__feedback-title p {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #111827;
+}
+
+.main__feedback-form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main__feedback-form input {
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding: 12px;
+  gap: 4px;
+}
+
+.main__feedback-form button {
+  color: white;
+  width: 497px;
+  height: 44px;
+  background: #8b5cf6;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__feedback-form button:hover {
+  background-color: #111827;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #111827;
+  width: 100%;
+  height: 234px;
+  padding-top: 40px;
+  padding-left: 192px;
+  padding-right: 192px;
+}
+
+.footer__logo {
+  color: white;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 30px;
+}
+
+.footer__copyright {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 24px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between; /* Распределяет элементы по краям */
+  align-items: flex-end; /* Выравнивает по нижнему краю */
+  flex-wrap: wrap; /* Позволяет переноситься на мобилках */
+  gap: 1rem; /* Отступ между блоками при переносе */
+}
+
+.footer__content-item {
+  color: #4b5563;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  width: 72.6%;
+}
+
+.footer__content-author {
+  color: #6b7280;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  width: 15%;
+}
+
+.footer__content-author span {
+  text-decoration: underline;
+}

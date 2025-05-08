@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/data/style/style.css" />
+    <link rel="icon" type="image/x-icon" href="data/image/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__logo">ColorX</div>
+        <div class="header__button">
+          <button>Оставить Отзыв</button>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="main__pack">
+          <div class="main__back">
+            <button style="display: none"></button>
+          </div>
+          <div class="main__upload">
+            <div class="main__upload-img">
+              <img id="preview" style="display: none" />
+            </div>
+            <div id="uploadMain" class="main__upload-input">
+              <label for="upload" class="custom-upload"
+                >Загрузить изображение</label
+              >
+              <input type="file" id="upload" style="display: none" />
+            </div>
+            <div class="main__upload-download">
+              <canvas id="canvas" hidden></canvas>
+            </div>
+            <div class="main__upload-color" id="colors"></div>
+            <div class="main__upload-btn">
+              <button id="copyAllBtn" style="margin-top: 10px; display: none">
+                Скопировать все HEX
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__readyColor">
+          <div class="main__readyColor-heading">
+            <p>Готовые варианты</p>
+          </div>
+          <div class="main__readyColor-pack"></div>
+        </div>
+        <div class="main__feedback">
+          <div class="main__feedback-container">
+            <div class="main__feedback-title"><p>Отзыв</p></div>
+            <form class="main__feedback-form">
+              <input type="text" class="form__Username" placeholder="Имя" />
+              <input
+                type="text"
+                class="form__Message"
+                placeholder="Сообщение"
+                style="width: 497px; height: 150px"
+              />
+              <button>Оставить Отзыв</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer__logo">ColorX</div>
+        <div class="footer__copyright">
+          2025 © Ни одно право не защищено, копируйте сколько влезет 😀
+        </div>
+        <div class="footer__content">
+          <div class="footer__content-item">
+            НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то,
+            что цены носят информационный и ознакомительный характер, а значит
+            ни в какой мере не являются публичной офертой, которая определена
+            в ст. 437 ГК РФ. Вся информация на сайте может содержать неточности,
+            орфографические и иные ошибки, она не является полной, окончательно
+            и исчерпывающей
+          </div>
+          <div class="footer__content-author">
+            Разработкой макета занимался
+            <span>Залужец Ростислав | как и весь проект</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="/data/scripts/script.js"></script>
+  <script type="module" src="/data/scripts/images.js"></script>
+</html>
