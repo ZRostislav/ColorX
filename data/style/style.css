@@ -9,19 +9,38 @@
 
 html,
 body {
-  scroll-behavior: smooth;
-}
-
-body {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
-/* Плавная замена текста */
+.container {
+  padding: 0;
+  margin: 0 auto;
+  max-width: max-content;
+}
+
 .changed {
   transition: all 0.01s ease;
   width: 750% !important;
   font-size: 14px !important;
+}
+
+/* Media */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .footer {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
 }
 
 /* Header */

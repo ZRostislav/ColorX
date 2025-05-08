@@ -18,7 +18,7 @@
       <div class="header">
         <div class="header__logo">ColorX</div>
         <div class="header__button">
-          <button>Оставить Отзыв</button>
+          <button onclick="location.href='#feedback'">Оставить Отзыв</button>
         </div>
       </div>
 
@@ -54,16 +54,27 @@
           </div>
           <div class="main__readyColor-pack"></div>
         </div>
-        <div class="main__feedback">
+        <div id="feedback" class="main__feedback">
           <div class="main__feedback-container">
             <div class="main__feedback-title"><p>Отзыв</p></div>
-            <form class="main__feedback-form">
-              <input type="text" class="form__Username" placeholder="Имя" />
+            <form
+              class="main__feedback-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSee6CM39iVaym3cd202BhGfs6gxNlIHWVR8sZ-TkyIGJBZU2A/formResponse"
+            >
+              <input
+                type="text"
+                class="form__Username"
+                placeholder="Имя"
+                name="entry.1236181177"
+                required
+              />
               <input
                 type="text"
                 class="form__Message"
                 placeholder="Сообщение"
                 style="width: 497px; height: 150px"
+                name="entry.1255631630"
+                required
               />
               <button>Оставить Отзыв</button>
             </form>
@@ -94,5 +105,6 @@
     </div>
   </body>
   <script type="module" src="/data/scripts/script.js"></script>
+  <script type="module" src="/data/scripts/scriptForms.js"></script>
   <script type="module" src="/data/scripts/images.js"></script>
 </html>
